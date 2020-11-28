@@ -47,7 +47,8 @@ int findStateBruteForce(vector<int> program) {
     return -1;
 }
 
-void day2start() {
+void runDay2() {
+    // https://adventofcode.com/2019/day/2
     const vector<int> input = {
        /* 000 */ 1, 0, 0, 3,
        /* 004 */ 1, 1, 2, 3,
@@ -86,8 +87,8 @@ void day2start() {
        /* 136 */ 99,
        /* 140 */ 2, 0, 14, 0
     };
-    cout << computeFirstPart(input) << endl;    // 5866714
-    cout << findStateBruteForce(input) << endl; // 5208
+    cout << "Day 2: computeFirstPart = " << computeFirstPart(input);    // 5866714
+    cout << ", findStateBruteForce = " << findStateBruteForce(input) << endl; // 5208
     // The internet says part 2 could be solved with the help of SAT/SMT.
     // I don't have ay knowledge in these topics, unfortunately (though I had a thought
     // that this program can be reverse-engineered and simplified to an equation).

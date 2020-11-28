@@ -2,7 +2,6 @@
 #include <vector>
 // I had C++ Streams API deployed in the folder next to this one.
 #include "../../StreamsCpp/source/Stream.h"
-#include "day2.cpp"
 
 using namespace std;
 
@@ -35,7 +34,8 @@ int sumOfFuel2(const vector<string>& masses) {
     return resultFuelSum;
 }
 
-int main() {
+int runDay1() {
+    // https://adventofcode.com/2019/day/1
     const vector<string> masses = {
         "126360", "61158", "149929", "88405", "87526", "51688", "75356", "116265", "134986", "111581",
         "135675", "69679", "74035", "144951", "86157", "68946", "76761", "114768", "70694", "84768", "147379", "78755",
@@ -47,11 +47,9 @@ int main() {
         "63234", "80274", "108251", "136663", "139149", "85052", "67973", "116461", "75070", "144261", "106539", "79712",
         "116112", "55755", "121428", "79362", "103489", "103157", "64403"
     };
-    cout << sumOfFuel1(masses) << endl; // 3254441
-    cout << sumOfFuel2(masses) << endl; // 4878818
-    cout << sumOfFuel1withStreams(masses) << endl; // 3254441
-
-    day2start();
+    cout << "Day 1: sumOfFuel1 = " << sumOfFuel1(masses); // 3254441
+    cout << ", sumOfFuel2 = " << sumOfFuel2(masses); // 4878818
+    cout << ", sumOfFuel1withStreams = " << sumOfFuel1withStreams(masses) << endl; // 3254441
 
     return 0;
 }
