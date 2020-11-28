@@ -34,7 +34,7 @@ int sumOfFuel2(const vector<string>& masses) {
     return resultFuelSum;
 }
 
-int runDay1() {
+void runDay1() {
     // https://adventofcode.com/2019/day/1
     const vector<string> masses = {
         "126360", "61158", "149929", "88405", "87526", "51688", "75356", "116265", "134986", "111581",
@@ -50,6 +50,4 @@ int runDay1() {
     cout << "Day 1: sumOfFuel1 = " << sumOfFuel1(masses); // 3254441
     cout << ", sumOfFuel2 = " << sumOfFuel2(masses); // 4878818
     cout << ", sumOfFuel1withStreams = " << sumOfFuel1withStreams(masses) << endl; // 3254441
-
-    return 0;
 }

@@ -1,8 +1,10 @@
 #ifndef ADVENTOFCODE_MAIN_H
 #define ADVENTOFCODE_MAIN_H
 
-int runDay1();
+void runDay1();
 
-int runDay2();
+void runDay2();
+
+void runDay3();
 
 #endif //ADVENTOFCODE_MAIN_H
