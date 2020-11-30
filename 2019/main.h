@@ -7,4 +7,6 @@ void runDay2();
 
 void runDay3();
 
+void runDay4();
+
 #endif //ADVENTOFCODE_MAIN_H
