@@ -1,0 +1,6 @@
+#ifndef ADVENTOFCODE_MAIN_H
+#define ADVENTOFCODE_MAIN_H
+
+void runDay1();
+
+#endif //ADVENTOFCODE_MAIN_H
