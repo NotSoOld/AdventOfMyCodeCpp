@@ -2,6 +2,7 @@
 
 int main() {
     runDay1();
+    runDay2();
     return 0;
 }
 
